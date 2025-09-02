@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(141, 110, 160);
+    background-color: #4F0056;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,7 +24,9 @@ body {
 
 #Game{
     display: flex;
-    width: 80%;
+    width: 100%;
+    padding: 5px;
+    background-color: #FA74FF;
 }
 
 #Game> .innercontents{
