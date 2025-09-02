@@ -43,21 +43,13 @@ header{
     } 
 }   
 
-
-
-#WhiteBack{
+#AllSkillLists{
     display: flex;
-    flex-direction: column;
-    background-color: beige;
-    align-items: center;
-    Justify-content: center;
-
-    min-width: 55%;
-    max-width: fit-content;
-
-    height:max-content;
-
     
+}
+
+#SkillList{
+    min-width: 180px;
 }
 
 #GamesList{
