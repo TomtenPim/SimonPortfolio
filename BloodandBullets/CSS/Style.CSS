@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(141, 110, 160);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+
+#WhiteBack{
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    align-items: center;
+    Justify-content: center;
+
+    min-width: 55%;
+    max-width: fit-content;
+
+    height:max-content;
+
+    
+}
+
+#Game{
+    display: flex;
+    width: 80%;
+    padding: 5px;
+}
+
+#Game> .innercontents{
+    padding: 5px;
+}
+
+#GameText{
+    min-width: 330px;
+    max-width: fit-content;
+}
+
+a:link{
+    color: black;
+}
+
+a:hover{
+    color: rgb(255, 0, 242);
+}
+
+h3>p{
+    font-size: medium;
+    width: 350;
+}
