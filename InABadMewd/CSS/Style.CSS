@@ -25,6 +25,18 @@ body {
     width: 350px;
 }
 
+#AboutGameElaboration{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+
+    p{
+        font-size: large;
+    }
+}
+
+
 header{
     background-color: #3e0044;
     position: fixed;
