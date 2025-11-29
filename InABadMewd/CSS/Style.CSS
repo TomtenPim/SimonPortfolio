@@ -36,6 +36,34 @@ body {
     }
 }
 
+#MyParts{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+
+    li{
+        font-size: larger;
+        font-weight: bold;
+    }
+
+    p{
+        font-size: large;
+        padding-bottom: 1rem;
+    }
+}
+
+#Takeaways{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+
+    p{
+        font-size: large;
+    }
+}
+
 
 header{
     background-color: #3e0044;

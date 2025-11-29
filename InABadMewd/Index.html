@@ -14,8 +14,10 @@
             <div>
                 <p>Team Size: 15</p>
                 <p>Engine: Unity</p>
-                <p>Time: 3 weeks</p>
+                <p>Time: ≈2 weeks</p>
             </div>
+            <a href="https://futuregames.itch.io/badmewd"> Link </a>
+
         </div> 
 
     </div>
@@ -32,10 +34,11 @@
         </ul>
     </header>
 
+    
     <div id="AboutGameElaboration">
         <h2>About Game</h2>
         <p>In A Bad Mewd is a third-person sandbox destruction game where players take control of a pampered house cat who is unfairly abandoned (for like 15 minutes, max) and takes revenge by destroying the apartment their owner just moved into.</p>
-        <P>You </P>
+        <P>You scramble around your owners apartment, gaining points for destroying things as you try to find the most optimal route of carnage through your new living space before your owner returns.</P>
     </div>
 
 
@@ -43,14 +46,19 @@
         <h2>My Parts</h2>
         <ul>
             <li>Player Movement</li>
+            <p> How movement functions in this game is slightly overengineered. It follows the standard W&S for forward and back, with A&D for strafing left and right with spacebar as jump. We apply forces to make us move (or just flat velocity in the case of jumping), however I manually calculated the way to keep movement consistent across player rotation instead of making directions local to the player themselves. This comes from that fact that this was the first 3d game I ever worked on in Unity and I was still unfamiliar with easier ways to achieve the same results. </p>
+            <!--<p> Much of my time on this project was spent working against Unitys own physics systems.</p>-->
+
+
             <li>Player Attacking</li>
-            <li>Camera Control</li>
+            <p> How the attack functions in this game is that I enable a collider connected to the cat and then apply a force away from the cat to every object within that collider, launching them away from you and allowing the physics and object breaking system (made by co-programmer Kenan Ege) to do their job from there.</p>
         </ul>
         
     </div>
 
     <div id="Takeaways">
-
+        <h2>Takeaways</h2>
+        <p></p>   
     </div>     
 
     <div id="ContactInfoSpacer"> 
@@ -64,5 +72,4 @@
         <p>LinkedIn: <a href="www.linkedin.com/in/simon-ågren-b5810a293"> www.linkedin.com/in/simon-ågren-b5810a293</a></p>
         
     </div>
-
 </body>
