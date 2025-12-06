@@ -9,12 +9,12 @@
 
         <div id="AboutGameItem">
             <h1>Vanguard</h1>
-            <h2>Topdown shooter</h2>
-            <p>Game made by me with a JavaScript engine by Jens Andreasson.</p>
+            <h2>Topdown Management Shooter</h2>
+            <p>The second Game project at Futuregames. I made all shooting, projectile behaviour, base entity behavour and enemy behaviour.</p>
             <div>
-                <p>Team Size: 1</p>
-                <p>Engine: Custom JavaScript Engine</p>
-                <p>Time: 2 weeks</p>
+                <p>Team Size: 16</p>
+                <p>Engine: Unity</p>
+                <p>Time: 4 weeks</p>
             </div>
         </div> 
 
@@ -32,12 +32,36 @@
         </ul>
     </header>
 
+    <div id="AboutGameElaboration">
+        <h2>About Game</h2>
+        <p>In Vanguard, you take control of the spaceship Daggerblade as you defend your home, a massive space colony, from invading threats.</p>
+        <p>To do this you must manage your ships energy across three systems: Engines, Shields and Weapons. Using these you destroy invaders and use their scraps to upgrade your ship against the upcoming waves.</p>
+    </div>
+
     <div id="MyParts">
-        
+        <h2>My Parts</h2>
+        <ul>
+            <li>Structure</li>
+            <p>For this project I really wanted to see what I could do with inehritance. At the bottom I have a Destructible, which is a base class that handles taking incoming damage and dying. Then ontop of that I have a projectile and enemy class that inherit from the destructible class. Those then in turn have variants that inherit form them, like a projectile that homes in on the player or one that explodes when it hits something. The same beeing done for diffrent enemy behaviours.</p>
+
+            <li>Player Attacking</li>
+            <p>For this game the idea was that the player should only focus on managing energy and controling the ship and so the player should shoot automatically. The way I went about doing this is a large spherical trigger around our player that logs the entry of enemy objects within it and begins firing on the closest one to the player.</p>
+
+            <li>Projectiles and Handler</li>
+            <p>Projectiles are all created by other scripts calling the shoot function in the ProjectileHandler singleton. Each call tellsthe handler which projectile it should create, where it should be created and where it should be aimed. After that the handler updatates all live projectiles in the active scene, the base behaviour of those beeing to move in the initial direction of their target.</p>
+
+            <li>Enemies and Behaviour</li>
+            <p>Enemy behaviour is determined by two scripts: </p> 
+            <p>Destroyer script (named after the Ship class, should in restrospect be called something like EnemyShipBehaviour as it is used for all ship types, just with tweaked values), this holds acceleration speed, top speed, a multiplier to how much it prefers targeting the player instead of the space colony, Max hp, Max shields, how much metal it should drop on death, at what distance it should close in on it's target and at what distance it should back away as well as the actuall movement behaviour aswell</p>
+            <p>EnemyShooting script, as implied by the name, determines how and what the enemy shoots. It has 5 tweakable values: At what range it will fire at the player, what projectile it will fire, how long the cooldown is between firing, how much more inclined it is to target the player instead of the space colony and lastly how often it should run the calculation to determine which it should target. </p>
+            <p>With theese three enemy ship types were made. One that stays back and fires at you from afar, one that stays a little bit closer and still shoots and one that just beelines right to the player in an attempt to ram them.</p>
+
+        </ul>
     </div>
 
     <div id="Takeaways">
-
+        <h2>Takeaways</h2>
+        <p> Remember to not put to much on your plate. The scope of tha game was larger than what was possible in those four weeks, I both gave myself and was given to much responsibility by others in this in an atempt to successfully diliver everything. In addition to the above points, I was also tasked with making a prototype for most other features, example player movement. And while I managed to produce most of what was asked of me, I'm very doubtfull I would have held out if my workload would have stayed.</p>
     </div>     
 
     <div id="ContactInfoSpacer"> 
