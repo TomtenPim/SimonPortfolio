@@ -9,13 +9,13 @@
 
         <div id="AboutGameItem">
             <h1>Judgement Ball</h1>
-            <h2>Topdown shooter</h2>
-            <p>Game made by me with a JavaScript engine by Jens Andreasson.</p>
+            <h2>2d platform high-score game</h2>
+            <p>Game made fully by me. Based on a Phaser3 tutorial.</p>
             <div>
                 <p>Team Size: 1</p>
-                <p>Engine: Custom JavaScript Engine</p>
-                <p>Time: 2 weeks</p>
+                <p>Engine: Phaser3</p>
             </div>
+            <a href="https://superjudgementball.netlify.app/">Link</a>
         </div> 
 
     </div>
@@ -34,15 +34,26 @@
 
     <div id="AboutGameElaboration">
         <h2>About Game</h2>
+        <p> This game grew out of <a href="https://phaser.io/tutorials/making-your-first-phaser-3-game/part1">this</a> starter tutorial for how to make games in Phaser3</p>
+        <p>In this game you play a small red ball trying to collect stars while avoiding the spikey balls they summon and the seeker when it awakenes</p>
     </div>
 
     <div id="MyParts">
         <h2>My Parts</h2>
+        <ul>
+            <li>Movement</li>
+            <p>Movement was my favourite part to work on for this game. The tutorial has flat velocities on button presses but it found it stiff to move like that so I reworked the movement to be acceleration based instead which solved my issues there. In addition to this I added an aerial dash to the game that launches you towards the mouse with varying strength depending on how far away the pointer is to the player. One more change I made is a variable jump height, this is done by reducing gravitys effect on the player as long as you hold jump and are moving upwards.</p>
+
+            <li>The Enemy</li>
+            <p>After roughly a minuite The Seeker will spawn at the center of the map. It is an entity that will chase the player. This is achived by comparing its X and Y coordiants with the players and axle-independantly accelerateing to reduce each delta position. Some extra acceleration is also added if it is currently moving away from the player.</p>
+        </ul>
     </div>
 
     <div id="Takeaways">
         <h2>Takeaways</h2>
-    </div>         
+        <p> This was one of the first proper (tough still small) games I created. Looking back at this code, there sure is a lot of If-statements, more functions could be made to avoid repeating code as much and inefficient math that could be improved. But even with all those issues the game still works, it runs.</p>
+        <p> Ultimately: If it works, it works. There are may ways to reach a goal and while I can look back now and see may way t oreach taht goal more efficiently, I still got there with the knowledge I had at the time.</p>
+    </div>          
 
     <div id="ContactInfoSpacer"> 
     </div>
