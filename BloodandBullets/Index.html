@@ -43,24 +43,23 @@
         <h2>My Parts</h2>
         <ul>        
             <li>Player</li>
-            <p> The player is controled using WASD inputs to determine direction and as a vampire you can turn into a mist by holding down Spacebar. While in your mist form you can't shoot or interact with anything, including enemy bodies and their bullets.</p>
+            <p> The player is controlled using WASD inputs to determine direction and as a vampire you can turn into a mist by holding down Spacebar. While in your mist form you can't shoot or interact with anything, including enemy bodies and their bullets.</p>
 
             <li>Weapons</li>
-            <p> The player has two offensive options. A revolver and a shotgun. The revolver does not drain ammo to fire and fires one projectile towards your cursor. The shotgun on the other hand costs two ammo to fire but lauches a volley of nine bullets with a much wider spread.</p>
-
-            <li>Ammo and Ammo Packs</li>
-            <p></p>
-
+            <p> The player has two offensive options. A revolver and a shotgun. The revolver does not drain ammo to fire and fires one projectile towards your cursor. The shotgun on the other hand costs two ammo to fire but launches a volley of nine bullets with a much wider spread.</p>
+            
             <li>Enemies</li>
-            <p></p>
+            <p> The game has four different enemies: Peasant - Walks in a straight line towards you with a pitchfork, deals damage on contact. Knight - Like a peasant goes straight for you, however, they move much faster and have more health. Hunter - Moves into range with their ranged weapon and tries to stay at that distance, shooting at the vampire. Vampire Hunter - Behaves similar to a hunter, however they have a massively increased rate of fire and an approximation of predictive aiming.</p>
+            <p> The spawn calculation is separated into two parts: How often and what. The more you kill the shorter the break between enemies spawns, it follows this formula: 1 second * 0.75^(#EnemiesKilled / 80). What enemy spawnes change over time instead, the longer the game goes on the higher the odds of spawning knight and vampire hunters are. </p>
+            
+            <li>Ammo Packs</li>
+            <p> Every enemy has a 20 % chance to spawn as an ammo pack instead. An ammo pack is a basic enemy that does nothing more than sit still on its own. It does, however have unique interactions with the player, giving the player five ammo instead of dealing damage on contact and exploding into a wave of 20 bullets if stuck by one of the vampires projectiles </p>
         </ul>
-        
-
-
     </div>
 
     <div id="Takeaways">
         <h2>Takeaways</h2>
+        <p> It is important to properly think about what you are doing to determine if what you get out of doing it is worth the cost of doing it. That is to say recognise when too much time is spent on too little, something I absolutely experienced in this project. Time I could have spent on improving gamefeel was spent trying (in vain) to get the Vampire Hunters predictive aim to work fully. In the end it isn't a fully functioning aim system and so much time was spent on trying to get that to work that that I didn't have the time to fix another issue with the Vampire Hunter turning their quick burst weapon into a fully automatic bullet hose. </p>
     </div>     
 
     <div id="ContactInfoSpacer"> 

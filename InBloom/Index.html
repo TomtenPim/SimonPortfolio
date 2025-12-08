@@ -10,7 +10,7 @@
         <div id="AboutGameItem">
             <h1>In Bloom</h1>
             <h2>First Person Horror Game</h2>
-            <p>The third Game Project i worked on at Futuregames. I primarily worked with player movement, the combat, checkpoint system and Fmod sound implementation.</p>
+            <p>The third Game Project I worked on at Futuregames. I primarily worked with player movement, the combat, checkpoint system and Fmod sound implementation.</p>
             <div>
                 <p>Team Size: 18</p>
                 <p>Engine: Unreal Engine</p>
@@ -35,38 +35,38 @@
 
     <div id="AboutGameElaboration">
         <h2>About Game</h2>
-        <p>You play as a farmer waking up from a car crash. Nature has begun reclaiming the cities of man. Your only hope of survival is finding Save Haven base and join the rest of the survivors.</p>
-        <p>Armed with nothing but your old revolver to defend yourself from the animated plantlife, you try to make your way to Safe Haven base, solving puzzels and navigating mazes along the way.</p>
+        <p>You play as a farmer waking up from a car crash. Nature has begun reclaiming the cities of man. Your only hope of survival is finding Save Haven base and joining the rest of the survivors.</p>
+        <p>Armed with nothing but your old revolver to defend yourself from the animated plantlife, you try to make your way to Safe Haven base, solving puzzles and navigating mazes along the way.</p>
     </div>
 
     <div id="MyParts">
         <h2>My Parts</h2>
         <ul>
             <li>Player Movement</li>
-            <p> WASD movement set up with Shift to sprint. That, alongside shooting reloading and interacting were all implemented using Unreals Input Maping Contexts and Input Actions. If you aim your gun more precicely it will force you to move at a non-sprinting pace.</p>
+            <p> WASD movement set up with Shift to sprint. That, alongside shooting, reloading and interacting were all implemented using Unreal's Input Mapping Contexts and Input Actions. If you hold down right click to aim your gun more precisely it will force you to move at a non-sprinting pace.</p>
 
             <li>Gunplay</li>
-            <p>Looking around and by extention aiming the gun was handled by Unreal Engines Input Actions. Shooting is handled in c++ and functions by cating a ray that damages enemies, asuming you have bullets in your cylinder. If you don't have any or if you press R you begin reloading the gun, reducing the amount of ammo you have in you Inventory. Theese all broadcast events so that designers could assign them apropriate animations to the actions. Shooting is normaly done from the hip, making aiming very difficuilt, but holding down right click will raise up the gun so that it's iron sights can be used to aim. In addition, firing while aiming like this will reduce the recoil of the gun making repeated accurate shots way easier.</p>
+            <p>Looking around and by extension aiming the gun was handled by Unreal Engines Input Actions. Shooting is handled in c++ and functions by casting a ray that damages enemies, assuming you have bullets in your cylinder. If you don't have any or if you press R you begin reloading the gun, reducing the amount of ammo you have in your Inventory. These all broadcast events so that designers could assign them appropriate animations to the actions. Shooting is normally done from the hip, making aiming very difficult, but holding down right click will raise up the gun so that its iron sights can be used to aim. In addition, firing while aiming like this will reduce the recoil of the gun making repeated accurate shots way easier.</p>
 
             <li>Checkpoint System</li>
             <p>For this game I decided to use Unreal Engines inbuilt Save Game Object to store all the data we needed, current and max Ammo, Keys picked up, location. I created an object that, when entered, saves all our current information  Upon death we simply load the game scene with the last Saved Game Data.</p>
 
             <li>Fmod Sound implementation</li>
-            <p>I worked very cloesly with our sound designer Fuad Shahmuradov on this, helpig set up Fmod for our project. When setup was done we split the work such that he made the sounds and I implemented them where they were needed.</p>
+            <p>I worked very closely with our sound designer Fuad Shahmuradov on this, helping set up Fmod for our project. When setup was done we split the work such that he made the sounds and I implemented them where they were needed.</p>
 
             <li>Additional Work</li>
-            <p>Apropriate VFX where you hit with your gun that changes on what material you hit.</p>
-            <p>Function to determine what material the Player is currently walking / running on to play apropriate sounds</p>
+            <p>Appropriate VFX where you hit with your gun that changes on what material you hit.</p>
+            <p>Function to determine what material the Player is currently walking / running on to play appropriate sounds</p>
             <p>Change volume on sound when you walk or sprint</p>
-            <p>Object that change what Index on an FMod track is played when entered, allowing for rapid changes to it or smooth trasitions with multiple objects placed.</p>
+            <p>Objects that change what Index on an FMod track is played when entered, allowing for rapid changes to it or smooth transitions with multiple objects placed.</p>
 
         </ul>
     </div>
 
     <div id="Takeaways">
         <h2>Takeaways</h2>
-        <p> This was my first experiecne working with a team in Unreal Engine. To alleviate the pains of designers who might have wanted to tweak anything the majority of my coding whas done in Blueprints, someting they had recived traning in. And through that I have come to realize that I find Blueprints weird. </p>
-        <p> Many complex features in Blueprints are just drag and drop nodes which makes it really easy to follow what is happening, but on the other hand simple things like an If-statement take up so much space that it quicly becomes hard to get an overview quickly. All in all, as a programmer I preffer standard code. </p>
+        <p> This was my first experience working with a team in Unreal Engine. To alleviate the pains of designers who might have wanted to tweak anything the majority of my coding was done in Blueprints, something they had received training in. And through that I have come to realize that I find Blueprints weird. </p>
+        <p> Many complex features in Blueprints are just drag and drop nodes which makes it really easy to follow what is happening, but on the other hand simple things like an If-statement take up so much space that it quickly becomes hard to get an overview quickly. All in all, as a programmer I prefer standard code. </p>
     </div>          
 
     <div id="ContactInfoSpacer"> 
