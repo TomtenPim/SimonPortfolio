@@ -1,5 +1,5 @@
 body {
-    background-color: #3e0044;
+    background-color: #090014;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,7 +26,7 @@ body {
 }
 
 header{
-    background-color: #3e0044;
+    background-color: #4e0693;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -60,12 +60,12 @@ header{
     display: flex;
     width: 100%;
     padding: 5px;
-    background-color: #f9aefc;
-    color: black;
+    background-color: #4e0693;
+    color: rgb(255, 255, 255);
     margin-bottom: 30px;
 
     a{
-        color: black;
+        color: rgb(235, 188, 101);
     }
     a:hover{
         color: rgb(255, 0, 242);
